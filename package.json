@@ -1,0 +1,18 @@
+{
+  "name": "odin-full-stack-javascript",
+  "version": "1.0.0",
+  "description": "Welcome to My Full Stack JavaScript Path! This journey equips me to build responsive, fully functional websites from scratch. I'll master JavaScript and Node.js to create dynamic client-side and robust server-side applications, gaining the skills to design and develop modern web solutions effectively.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.81.0"
+  },
+  "dependencies": {
+    "compass-mixins": "^0.12.12"
+  }
+}
