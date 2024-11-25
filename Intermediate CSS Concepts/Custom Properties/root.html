@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The :root selector</title>
+    <style>
+        :root {
+            --main-color: red;
+        }
+
+        .cool-paragraph {
+            color: var(--main-color);
+        }
+
+        .exciting-paragraph {
+            background-color: var(--main-color);
+        }
+    </style>
+</head>
+
+<body>
+    <p class="cool-paragraph">Lorem ipsum dolor sit amet.</p>
+
+    <p class="exciting-paragraph">Lorem ipsum dolor sit amet.</p>
+
+</body>
+
+</html>
