@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Relative Positioning</title>
+    <style>
+        .utility-flex {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+        }
+
+
+        .parent_container {
+
+            background: rgb(255, 187, 98);
+
+            padding: 10px;
+
+            width: 600px;
+
+            height: 400px;
+
+        }
+
+
+        .child_1,
+
+        .child_2,
+
+        .child_3 {
+
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+
+                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            font-weight: 600;
+
+            background: #e961ee;
+
+            border: 5px solid rgb(255, 255, 255);
+
+            width: 300px;
+
+            height: 100px;
+
+            color: rgb(238, 238, 238);
+
+            border-radius: 5px;
+
+            margin: 5px;
+
+        }
+
+        .child_2 {
+
+            position: relative;
+
+            bottom: 40px;
+
+            right: 50px;
+
+            border: 8px solid purple;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent_container utility-flex">
+
+        <div class="child_1 utility-flex">Child 01</div>
+
+        <div class="child_2 utility-flex">Child 02</div>
+
+        <div class="child_3 utility-flex">Child 03</div>
+
+    </div>
+</body>
+
+</html>

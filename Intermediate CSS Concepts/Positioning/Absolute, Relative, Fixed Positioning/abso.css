@@ -1,0 +1,18 @@
+.parent {
+  border: 2px solid #0074d9;
+  color: #0074d9;
+  padding: 20px;
+}
+
+.element {
+  border: 1px dotted #000;
+  background-color: #eee;
+  padding: 20px;
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=abso.css.map */

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fixed Positioning</title>
+    <style>
+        .utility-flex {
+
+display: flex;
+
+flex-direction: column;
+
+justify-content: center;
+
+align-items: center;
+
+}
+
+
+.parent_container {
+
+background: rgb(255, 187, 98);
+
+padding: 10px;
+
+width: 600px;
+
+/* height: 400px; */
+
+margin: auto;
+
+/* position: relative; */
+
+}
+
+
+.child_2 {
+
+position: fixed;
+
+bottom: 300px;
+
+right: 100px;
+
+border: 8px solid purple;
+
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="parent_container utility-flex">
+
+        <div class="child_1 utility-flex">Child 01</div>
+
+        <div class="child_2 utility-flex">Child 02</div>
+
+        <div class="child_3 utility-flex">Child 03</div>
+
+    </div>
+</body>
+
+</html>

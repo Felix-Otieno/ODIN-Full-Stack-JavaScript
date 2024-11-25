@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-elements are also frequently used to insert an empty string</title>
+    <style>
+        .box::before {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="box">Content in the box in my HTML page.</p>
+
+</body>
+
+</html>

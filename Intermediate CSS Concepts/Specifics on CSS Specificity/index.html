@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSpecifics on CSS Specificity</title>
+    <style>
+        .favorite {
+            color: red !important;
+            font-weight: bold !important;
+        }
+
+        html body div#pagewrap ul#summer-drinks li.favorite {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="summer-drinks">
+        <li class="favorite">Whiskey and Ginger Ale</li>
+        <li>Wheat Beer</li>
+        <li>Mint Julip</li>
+    </ul>
+</body>
+
+</html>

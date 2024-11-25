@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flexbox</title>
+    <style>
+        .flex-container {
+            display: flex;
+            /* Activates Flexbox */
+            justify-content: space-between;
+            /* Distributes space evenly */
+        }
+
+        .flex-item {
+            flex: 1;
+            /* Makes each item take up equal space */
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Column 1</div>
+        <div class="flex-item">Column 2</div>
+    </div>
+
+</body>
+
+</html>

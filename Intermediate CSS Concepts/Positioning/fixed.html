@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position: fixed - what????</title>
+    <style>
+        .big-box {
+            margin: 10%;
+            width: 100px;
+            height: 100px;
+            background: pink;
+        }
+
+        .big-box:hover {
+            filter: grayscale(100%);
+        }
+
+        .fixed-box {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: lightblue;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big-box">
+        hover here
+        <div class="fixed-box">I'm fixed</div>
+    </div>
+</body>
+
+</html>
