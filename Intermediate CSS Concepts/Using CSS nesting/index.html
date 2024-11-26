@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Without nesting selector</title>
+    <style>
+        input {
+            /* styles for input not in a label  */
+            border: tomato 2px solid;
+        }
+
+        label {
+            /* styles for label */
+            font-family: system-ui;
+            font-size: 1.25rem;
+
+            input {
+                /* styles for input in a label  */
+                border: blue 2px dashed;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="name">Name:
+            <input type="text" id="name" />
+        </label>
+        <label for="email">email:</label>
+        <input type="text" id="email" />
+    </form>
+
+</body>
+
+</html>

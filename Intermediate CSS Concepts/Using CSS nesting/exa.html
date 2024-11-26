@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appending nesting selector</title>
+    <style>
+        .wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+  font-family: system-ui;
+}
+.card {
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  & h2 {
+    /* equivalent to `.card h2` */
+    color: slateblue;
+    .featured & {
+      /* equivalent to `:is(.card h2):is(.featured h2)` */
+      color: tomato;
+    }
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <article class="card">
+          <h2>Card 1</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </article>
+        <article class="card featured">
+          <h2>Card 2</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </article>
+        <article class="card">
+          <h2>Card 3</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </article>
+      </div>
+      
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesting the sibling combinator</title>
+    <style>
+        h2 {
+            color: tomato;
+
+            +p {
+                color: white;
+                background-color: black;
+            }
+        }
+
+        /* this code can also be written with the & nesting selector */
+        /* 
+h2 {
+  color: tomato;
+  & + p {
+    color: white;
+    background-color: black;
+  }
+}
+*/
+    </style>
+</head>
+
+<body>
+    <h2>Heading</h2>
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+
+</body>
+
+</html>
