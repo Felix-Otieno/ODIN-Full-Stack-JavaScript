@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using the :root pseudo-class</title>
+    <style>
+        /* Define --main-bg-color here */
+        :root {
+            --main-bg-color: cornflowerblue;
+        }
+
+        /* For each class, set some colors */
+        .one {
+            background-color: var(--main-bg-color);
+        }
+
+        .two {
+            color: black;
+            background-color: aquamarine;
+        }
+
+        .three {
+            background-color: var(--main-bg-color);
+        }
+
+        .four {
+            background-color: var(--main-bg-color);
+        }
+
+        .five {
+            background-color: var(--main-bg-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="one">
+            <p>One</p>
+        </div>
+        <div class="two">
+            <p>Two</p>
+            <div class="three">
+                <p>Three</p>
+            </div>
+        </div>
+        <input class="four" placeholder="Four" />
+        <text class="five">Five</textarea>
+    </div>
+
+</body>
+
+</html>
