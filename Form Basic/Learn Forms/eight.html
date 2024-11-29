@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help the user enter the correct format</title>
+    <style>
+        button {
+            margin-top: 1rem;
+        }
+
+        .validation-message {
+            display: block;
+            padding-top: 0.4em;
+        }
+
+        label {
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <form>
+                <div>
+                    <label for="password">Password (required)</label>
+                    <input required type="password" id="password" name="password"
+                        aria-describedby="password-validation">
+                    <span id="password-validation" class="validation-message">Please use at least eight
+                        characters.</span>
+                </div>
+                <button type="button">Save</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
