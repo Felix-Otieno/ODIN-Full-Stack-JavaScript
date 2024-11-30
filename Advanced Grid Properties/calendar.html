@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Grid</title>
+    <style>
+        .calendar {
+            display: grid;
+            grid-template-columns:
+                repeat(7, 1fr);
+            gap: 4px;
+        }
+
+        .calendar {
+            width: 340px;
+            max-width: 100%;
+            padding: 4px;
+            border:
+                1px solid hsl(210deg 10% 40%);
+            border-radius: 8px;
+            list-style-type: none;
+        }
+
+        .day {
+            display: grid;
+            place-content: center;
+            border:
+                2px solid hsl(210deg 8% 50%);
+            border-radius: 4px;
+            color: white;
+            font-weight: 700;
+            /*
+    “aspect-ratio” ensures that each
+    cell will be square. Because we
+    haven't explicitly defined our
+    rows, the grid algorithm will
+    automatically add rows, and
+    they'll match the height of
+    these children!
+  */
+            aspect-ratio: 1 / 1;
+        }
+
+        html {
+            margin: 0;
+            padding: 0;
+            background: hsl(210deg 15% 6%);
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <ol class="calendar">
+        <li class="day">1</li>
+        <li class="day">2</li>
+        <li class="day">3</li>
+        <li class="day">4</li>
+        <li class="day">5</li>
+        <li class="day">6</li>
+        <li class="day">7</li>
+        <li class="day">8</li>
+        <li class="day">9</li>
+        <li class="day">10</li>
+        <li class="day">11</li>
+        <li class="day">12</li>
+        <li class="day">13</li>
+        <li class="day">14</li>
+        <li class="day">15</li>
+        <li class="day">16</li>
+        <li class="day">17</li>
+        <li class="day">18</li>
+        <li class="day">19</li>
+        <li class="day">20</li>
+        <li class="day">21</li>
+        <li class="day">22</li>
+        <li class="day">23</li>
+        <li class="day">24</li>
+        <li class="day">25</li>
+        <li class="day">26</li>
+        <li class="day">27</li>
+        <li class="day">28</li>
+        <li class="day">29</li>
+        <li class="day">30</li>
+        <li class="day">31</li>
+    </ol>
+</body>
+
+</html>
