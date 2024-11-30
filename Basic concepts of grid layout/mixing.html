@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixing flexible and absolute sizes</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 500px 1fr 2fr;
+            
+        }
+
+        .wrapper > div {
+            background-color: aqua;
+            border: 10px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>
+        <div>Five</div>
+    </div>
+
+</body>
+
+</html>
