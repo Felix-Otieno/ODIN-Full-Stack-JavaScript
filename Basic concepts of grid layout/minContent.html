@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing grid columns with min-content</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: min-content min-content 1fr;
+            grid-gap: 5px;
+            box-sizing: border-box;
+            height: 200px;
+            width: 100%;
+            background-color: #8cffa0;
+            padding: 10px;
+        }
+
+        #container>div {
+            background-color: #8ca0ff;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div>Item</div>
+        <div>Item with more text in it.</div>
+        <div>Flexible item</div>
+    </div>
+
+</body>
+
+</html>
