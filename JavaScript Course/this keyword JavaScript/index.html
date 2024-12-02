@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object</title>
+</head>
+
+<body>
+    <script>
+        const userName = {
+            firstName: "John",
+            lastName: "Doe",
+            hobbies: ["Programming", "Watching football"],
+            listHobbies: function() {
+                this.hobbies.forEach(function(hobby) {
+                    console.log(this.firstName);
+                    console.log(hobby);
+                }, this);
+            }
+        }
+        userName.listHobbies();
+
+        function User(name) {
+            this.name = name;
+            console.log(this);
+
+        }
+        const devsage = new User("Devsage");
+        const codingPhase = new User("Coding")
+        
+    </script>
+</body>
+
+</html>
