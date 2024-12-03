@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+
+<body>
+    <script>
+        function createGreeting(greeting = "") {
+            const myGreet = greeting.toUpperCase();
+            return function (name) {
+                return `${myGreet} ${name}`;
+            };
+        }
+
+        const sayHello = createGreeting('hello');
+        const sayHey = createGreeting('hey');
+        console.log(sayHello('wes'));
+        console.log(sayHello('kait'));
+        console.log(sayHey('kait'));
+
+        function createGame(gameName) {
+            let score = 0; // Initialize score
+            return function win() { // Inner function to increment score
+                score++;
+                return `Your ${gameName} score is ${score}`;
+            };
+        }
+
+        // Create game instances
+        const hockeyGame = createGame('Hockey');
+        const soccerGame = createGame('Soccer');
+
+        // Use the game instances to simulate scoring
+        console.log(hockeyGame()); // Your Hockey score is 1
+        console.log(hockeyGame()); // Your Hockey score is 2
+        console.log(soccerGame()); // Your Soccer score is 1
+        console.log(soccerGame()); // Your Soccer score is 2
+        console.log(hockeyGame()); // Your Hockey score is 3
+
+    </script>
+</body>
+
+</html>
